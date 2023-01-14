@@ -1,1 +1,1 @@
-# Graph-AI-application
+# Linear Programming/ Graph AI
