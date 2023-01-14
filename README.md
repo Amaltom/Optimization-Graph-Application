@@ -1,4 +1,4 @@
-# Linear Programming/ Graph AI
+# Linear Programming, Graph Theory and Machine Learning Applications
 
 ## Introduction
 
