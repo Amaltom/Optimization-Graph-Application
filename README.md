@@ -1,6 +1,6 @@
 # Linear Programming/ Graph AI
 
-Introduction
+## Introduction
 
 Zomato is an Indian multinational restaurant aggregator and food delivery company. It provides information about restaurants, average cost for two, cuisines served, ratings etc. The dataset used for analysis is picked up from kaggle.com. This analysis would be most suitable for foodies who are looking to explore cuisines from various cities of the world based on their budget. The dataset has the following components:
 
@@ -26,7 +26,7 @@ Zomato is an Indian multinational restaurant aggregator and food delivery compan
 ●	Rating text
 ●	Votes
 
-Objective
+## Objective
 
 To apply the concepts from Network Theory, Machine Learning and Optimization, and draw insights that would assist a person answer the following questions
 
@@ -55,7 +55,7 @@ Application of concepts to Dataset Scenario
 Let us imagine Adam - a foodie who recently started dating a girl and wants to take her out to restaurants in multiple cities. But he has no idea on where to start, how much it would cost etc. We will try to help him out through our analysis and provide insights so that he can impress her in the best way possible.
 
 
-Optimization - Linear Programming application
+## Optimization - Linear Programming application
 
 Adam is planning to take his girlfriend to Manchester but his girlfriend is pretty demanding and wants to go out on dates 20 times during their visit. But it doesn’t stop there as she has more specific demands:
 
@@ -93,7 +93,7 @@ Output from Linear optimizer:
 ![Picture 9](https://user-images.githubusercontent.com/28756098/212497302-a23a2746-8d03-4db8-b9a3-072e3e15f0e0.jpg)
 
  
-Application of Graph Theory
+## Application of Graph Theory
 
 
 Scenario 1 : Adam with his girlfriend plans to visit Mumbai for a week-long trip. He decides to take her out to one restaurant each day. Adam wants to know if there are any other restaurants closer than the restaurant of interest in the same path he would take so that he can pay a visit to the closer restaurant than the one intended and reduce the expenditure on Uber.
@@ -142,7 +142,7 @@ Where ‘G’ is the above graph. The optimal path from the analysis is:
 
 
 
-Machine Learning
+## Machine Learning
 
 Objective : To predict the “average cost for two” given the location, ratings, votes, table bookings, delivery options etc. Prediction is made on the subset data filtering for India as the country.
 
@@ -184,7 +184,7 @@ Xgboost model was fit using the best params from the grid search. The model achi
 
 
 
-Visualising feature importance:
+### Visualising feature importance:
 
 
 ![Picture 24](https://user-images.githubusercontent.com/28756098/212497335-76e0b359-c529-4b0d-85e4-033421249493.jpg)
@@ -197,7 +197,7 @@ From the graph, we can see that the longitude and latitude, Votes and aggregate 
 
 
 
-Application of decision tree
+### Application of decision tree
 
 Objective: To predict if a restaurant present in a certain location has a home delivery service or not.
 
@@ -208,7 +208,7 @@ If Adam finds a new restaurant other than the ones in the list of restaurants pr
 
 
 
-Data Exploration
+### Data Exploration
 
 ![Picture 25](https://user-images.githubusercontent.com/28756098/212497336-4d893ece-99a6-417a-a590-d83b7982ad00.png)
 
@@ -219,7 +219,7 @@ We can see that the Average Cost for two is an important differentiator for unde
 From the above graph we can see that Votes is an important differentiator for understanding whether a restaurant will deliver or not
 
 
-Model Building
+### Model Building
 
 
 Steps Undertaken:
@@ -234,7 +234,7 @@ Steps Undertaken:
 5.	Constructed the decision tree using the optimal parameters. The optimal parameters are (max_depth - 6, n_estimators=30, learning_rate=0.3)
 
 
-Model Results:
+### Model Results:
 
 
 Confusion Matrix
